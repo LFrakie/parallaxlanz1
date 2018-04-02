@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy|Work+Sans:100,300,400');
+
+body, html {
+  width: 100%;
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  background: #FFFCE6;
+  color: #7D1424;
+  a {
+    color: #F24D16;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Satisfy', cursive;
+  font-size: 3em;
+}
+section {
+  height: 100vh;
+}
+.center {
+  text-align: center;
+}
+
+/* CSS */
+.hsContainer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.hsContent {
+  max-width: 450px;
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  color: #FFFCE6;
+  padding: 0 8%;
+  text-align: center;
+  text-shadow: 2px 2px 0px #000;
+}
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+/* Slide 1 */
+#slide-1 {
+  .bcg {
+    z-index: 1;
+    background-image:url('https://www.jinnah.edu/wp-content/uploads/2014/06/low-poly-texture-15.png');
+  }
+}
+
+#slide-3 {
+  .bcg {
+    z-index: 1;
+    background-image:url('http://fullhdwallpapers.info/wp-content/uploads/2012/04/retro-wallpaper.jpg');
+  }
+}
+
+#slide-2 {
+  z-index: 3;
+  height: 150vh;
+  background: #FFFCE6;
+  position: relative;
+  // .bcg {
+  //   background-image:url('https://www.jinnah.edu/wp-content/uploads/2014/06/low-poly-texture-15.png')
+  // }
+}
+
+.fixed-on-top {
+  top:0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+.l-top {
+  opacity: .5;
+  z-index: 0;
+  position: fixed;
+    background: -moz-linear-gradient(-45deg,#333973 0,#673a5d 100%);
+        background: -webkit-gradient(linear,left top,right bottom,color-stop(0%,#333973),color-stop(100%,#673a5d));
+        background: -webkit-linear-gradient(-45deg,#333973 0,#673a5d 100%);
+        background: -o-linear-gradient(-45deg,#333973 0,#673a5d 100%);
+        background: -ms-linear-gradient(-45deg,#333973 0,#673a5d 100%);
+        background: linear-gradient(135deg,#333973 0,#673a5d 100%);
+}
+
+.content {
+    position: absolute;
+}
+
+.circle {
+  display: table;
+  border-radius: 200px;
+  width: 400px;
+  height: 400px;
+  font-family: 'Satisfy', cursive;
+  font-size: 140px;
+  color: #FFFCE6;
+  background: #EB573C;
+}
+
+.circle > div {
+  display: table-cell;
+    vertical-align: middle;
+}
